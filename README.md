@@ -1,12 +1,12 @@
   
 
-## About
+## About SubFinder Web
 
 ![SubFinder Preview](prev.png)
 
   
 
-*SubFinder* is a web-based subdomain enumeration tool built using Node.js and the [node-pty](https://github.com/Tyriar/node-pty) library. It allows you to enter a subdomain and run the SubFinder command-line tool to enumerate subdomains on the server-side, and display the results in the browser using a terminal-like interface.
+*SubFinder Web* is a web-based subdomain enumeration tool built using Node.js and the [node-pty](https://github.com/Tyriar/node-pty) library. It allows you to enter a subdomain and run the SubFinder command-line tool to enumerate subdomains on the server-side, and display the results in the browser using a terminal-like interface.
 
   
 
@@ -33,7 +33,8 @@ git clone https://github.com/tegal1337/SubFinder-Web.git
   
 
 ```bash
-git clone https://github.com/tegal1337/SubFinder-Web.git
+cd SubFinder-Web
+npm install
 ```
 
   
