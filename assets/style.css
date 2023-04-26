@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Menlo', 'Consolas', monospace;
+    background-color: #282C34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+#terminal-container {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.xterm-viewport {
+    overflow-y: hidden !important;
+}
+
+.terminal-window {
+    border-radius: 5px;
+    background-color: #000;
+    padding-top: 24px;
+    position: relative;
+}
+
+.window-controls {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 54px;
+}
+
+.window-controls button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.window-controls .close {
+    background-color: #FF5F57;
+}
+
+.window-controls .minimize {
+    background-color: #FFBD2E;
+}
+
+.window-controls .maximize {
+    background-color: #27C93F;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subdomain-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#subdomain-input {
+    padding: 5px 10px;
+    font-family: 'Menlo', 'Consolas', monospace;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+#subdomain-form button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-family: 'Menlo', 'Consolas', monospace;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #579FE6;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+#subdomain-form button:hover {
+    background-color: #4a8cd6;
+}
+
+.terminal-frame {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 820px;
+    height: 420px;
+    background-color: #000;
+    overflow: hidden;
+}
+.title {
+    font-size: 74px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #FFBD2E;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    #subdomain-form {
+        flex-direction: column;
+    }
+
+    #subdomain-form button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .terminal-frame {
+        width: calc(100% - 40px);
+        height: calc(50% - 20px);
+    }
+
+    #terminal {
+        font-size: 12px;
+    }
+}

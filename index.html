@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubFinder Web - Online Subdomain Finder</title>
+    <meta name="description" content="SubFinder Web is an online subdomain finder tool that helps you discover subdomains for any given domain using a simple and intuitive interface.">
+    <meta name="keywords" content="subfinder, subdomain finder, online subdomain finder, web subdomain finder, subdomain discovery, subdomain enumeration">
+    <meta name="author" content="Your Name or Company Name">
+    <link rel="canonical" href="https://your-domain.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="SubFinder Web - Online Subdomain Finder">
+    <meta property="og:description" content="SubFinder Web is an online subdomain finder tool that helps you discover subdomains for any given domain using a simple and intuitive interface.">
+    <meta property="og:image" content="https://your-domain.com/preview-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-domain.com/">
+    <meta property="twitter:title" content="SubFinder Web - Online Subdomain Finder">
+    <meta property="twitter:description" content="SubFinder Web is an online subdomain finder tool that helps you discover subdomains for any given domain using a simple and intuitive interface.">
+    <meta property="twitter:image" content="https://your-domain.com/preview-image.jpg">
+
+    <link rel="stylesheet" href="/node_modules/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="title">SubFinder Web</h1>
+        <h2 class="subtitle">(Subdomain Finder In Web)</h2>
+        <form id="subdomain-form">
+            <input type="text" id="subdomain-input" placeholder="Enter subdomain" />
+            <button type="submit">Submit</button>
+        </form>
+        <div class="terminal-frame">
+            <div class="terminal-window" style="display: none;">
+
+                <div class="window-controls">
+                    <button class="close"></button>
+                    <button class="minimize"></button>
+                    <button class="maximize"></button>
+                </div>
+                <div id="terminal-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/xterm/lib/xterm.js"></script>
+    <script src="/node_modules/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
